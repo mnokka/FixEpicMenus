@@ -1,2 +1,3 @@
-# GetIssueTypeCondition
-Get Jira issue type to be used in Script Runner Script fragments
+# FixEpicMenus
+
+Using Script Runner Script fragments preventing defined project's Epic to show Create Subtask menu entry

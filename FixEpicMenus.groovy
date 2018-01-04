@@ -16,10 +16,11 @@ import com.atlassian.jira.issue.Issue
 	//**************** CONFIGURATIONS ****************************
 	
 String  KillIssueType="Epic"
-String  TargetProject="CreateCorrectSubtask" //ALM DEMO
-// String TargetProject="Copy GaaS"
+//String  TargetProject="CreateCorrectSubtask" //ALM DEMO
+String TargetProject="COPY_OF_GAAS_ONLY_TESTING"
 // String TargetProject="GaaS"
 //String TargetProject="FindNextVersion"
+//String TargetProject="abc_Testing"
 
 	 // ***************** END OF CONFIGURATIONS ****************************
 	

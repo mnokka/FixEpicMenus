@@ -3,6 +3,10 @@
 // Using Script Runner Script fragments
 // Jan 2018  mika.nokka1@gmail.com
 //
+//
+// Hide system or plugin UI element
+// hide element: com.atlassian.jira.plugin.system.issueoperations:create-subtask
+// condition: This file in Jira's .../scripts directory
 
 import org.apache.log4j.Logger
 import org.apache.log4j.Level

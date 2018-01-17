@@ -7,6 +7,8 @@
 // Hide system or plugin UI element
 // hide element: com.atlassian.jira.plugin.system.issueoperations:create-subtask
 // condition: This file in Jira's .../scripts directory
+//
+// TODO: Multiple target project handling
 
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
@@ -17,8 +19,8 @@ import com.atlassian.jira.issue.Issue
 	
 String  KillIssueType="Epic"
 //String  TargetProject="CreateCorrectSubtask" //ALM DEMO
-String TargetProject="COPY_OF_GAAS_ONLY_TESTING"
-// String TargetProject="GaaS"
+String TargetProject="COPY_OF_GAAS_ONLY_TESTING" // if more projects use array
+String TargetProject2="GaaS"
 //String TargetProject="FindNextVersion"
 //String TargetProject="abc_Testing"
 
@@ -38,7 +40,7 @@ String TargetProject="COPY_OF_GAAS_ONLY_TESTING"
 		//log.debug("type: ${type}")
 		//log.debug("project: ${project}")
 		
-		if(project==TargetProject) {
+		if(project==TargetProject || project==TargetProject2) {
 			//log.debug("Target Project found: ${project}")
 			
 			if (type==KillIssueType) {

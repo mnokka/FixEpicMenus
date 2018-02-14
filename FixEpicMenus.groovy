@@ -8,7 +8,7 @@
 // hide element: com.atlassian.jira.plugin.system.issueoperations:create-subtask
 // condition: This file in Jira's .../scripts directory
 //
-// TODO: Multiple target project handling
+// TODO: Multiple target projects handling
 
 import org.apache.log4j.Logger
 import org.apache.log4j.Level
@@ -21,6 +21,7 @@ String  KillIssueType="Epic"
 //String  TargetProject="CreateCorrectSubtask" //ALM DEMO
 String TargetProject="COPY_OF_GAAS_ONLY_TESTING" // if more projects use array
 String TargetProject2="GaaS"
+String TargetProject3="GaaS Training - Not for production use"
 //String TargetProject="FindNextVersion"
 //String TargetProject="abc_Testing"
 
@@ -40,7 +41,7 @@ String TargetProject2="GaaS"
 		//log.debug("type: ${type}")
 		//log.debug("project: ${project}")
 		
-		if(project==TargetProject || project==TargetProject2) {
+		if(project==TargetProject || project==TargetProject2 ||  project==TargetProject3) {
 			//log.debug("Target Project found: ${project}")
 			
 			if (type==KillIssueType) {

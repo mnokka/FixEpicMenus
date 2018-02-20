@@ -23,8 +23,10 @@ String TargetProject="COPY_OF_GAAS_ONLY_TESTING" // if more projects use array
 String TargetProject2="GaaS"
 String TargetProject3="GaaS Training - Not for production use"
 String TargetProject4="Impala Production"
+String TargetProject5= "Training Project - Our World - Not for production"
 //String TargetProject="FindNextVersion"
 //String TargetProject="abc_Testing"
+//String TargetProject5= "Training Project - Number X"
 
 	 // ***************** END OF CONFIGURATIONS ****************************
 	
@@ -42,7 +44,7 @@ String TargetProject4="Impala Production"
 		//log.debug("type: ${type}")
 		//log.debug("project: ${project}")
 		
-		if(project==TargetProject || project==TargetProject2 ||  project==TargetProject3) {
+		if(project==TargetProject || project==TargetProject2 ||  project==TargetProject3 ||  project==TargetProject4 ||  project==TargetProject5) {
 			//log.debug("Target Project found: ${project}")
 			
 			if (type==KillIssueType) {

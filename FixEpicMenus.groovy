@@ -22,6 +22,7 @@ String  KillIssueType="Epic"
 String TargetProject="COPY_OF_GAAS_ONLY_TESTING" // if more projects use array
 String TargetProject2="GaaS"
 String TargetProject3="GaaS Training - Not for production use"
+String TargetProject4="Impala Production"
 //String TargetProject="FindNextVersion"
 //String TargetProject="abc_Testing"
 
